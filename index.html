@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistani Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+          <ul>
+              <div id="logo">
+                  <span>Recipes</span>
+                  <p>Website</p>
+              </div>
+              <div id="nav-item">
+                  <li><a href="#">Pakistani Recipe</a></li>
+                  <li><a href="#">Indian Recipe</a></li>
+                  <li><a href="#">Chinese</a></li>
+                  <li><a href="#">Hydrabadi</a></li>
+              </div>
+             
+              <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+          </ul>
+      </nav>
+
+    </header>
+      <!-- navbar complete  -->
+
+    <div class="container">
+      <div class="top">
+        <h1>Pakistani Recipes</h1>
+        <input type="text" onkeyup="filterRecipe()" id="filter-input" placeholder="Search for a recipe" >
+        <button id="filter-button">Search</button>
+      </div>
+      <div id="recipe-list">
+        <div class="recipe-card">
+          <h2>Chicken Karhai</h2>
+          <img src="images/chicken karhai.jpeg" alt="" />
+          <p>
+          Click on the button to view the recipe
+            details.
+          </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Beef Karhai</h2>
+          <img src="images/beef karhai.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+            <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Beef Biryani</h2>
+          <img src="images/beef biryani'.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Gola Kabab</h2>
+          <img src="images/gola kabab.jpeg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Nihari</h2>
+          <img src="images/Nihari.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Pulao</h2>
+          <img src="images/pulao.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Chapli Kabab</h2>
+          <img src="images/chapli kabab.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Aloo Gosht</h2>
+          <img src="images/Aloo Gosht.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Qorma</h2>
+          <img src="images/Qorma.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Saag</h2>
+          <img src="images/Saag.jpeg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button> 
+           <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Bhindi</h2>
+          <img src="images/Bhindi.jpeg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Daal Chawal</h2>
+          <img src="images/Daal Chawal.jpg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Pakora</h2>
+          <img src="images/pakora.jpeg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Samosa</h2>
+          <img src="images/Samosa.webp" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Kofta Salan</h2>
+          <img src="images/kofta.jpeg" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+        <div class="recipe-card">
+          <h2>Seekh Kabab</h2>
+          <img src="images/Seekh Kabab.webp" alt="Example Recipe" />
+          <p>
+            Click on the button to view the recipe
+              details.
+            </p>
+          <button class="view-details-button">View Recipe</button>
+          <div class="recipe-details">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start  -->
+     
+    <script src="script.js"></script>
+  </body>
+</html>
